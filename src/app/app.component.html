@@ -30,5 +30,21 @@
     </div>
   </section>
 
+  <section class="small-squares-container">
+    <div class="subtitle">Overview - Today</div>
+
+    <div class="small-squares-container" *ngFor="let square of smallSquare">
+      <div class="small-square">
+        <div class="row-1">
+          <div class="small-square-details">{{square.details}}</div>
+          <img class="small-square-socialred" [src]="square.icon" alt="">
+        </div>
+        <div class="row-2">
+          <div class="small-square-amount">{{square.amount}}</div>
+          <div class="small-square-variation"><img [src]="square.symbol" alt="">{{square.variation}}%</div>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>

@@ -1,6 +1,9 @@
 export class SmallSquare {
-  name:string;
+  details:string;
   icon:string;
   amount:number;
   variation:number;
+  symbol:string
+  indicator:string
+
 }
