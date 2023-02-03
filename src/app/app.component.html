@@ -8,8 +8,10 @@
 </head>
 <body>
   <nav>
-    <div class="title">Social Media Dashboard</div>
-    <div class="text">Total Followers: 23,004</div>
+    <div class="presentation">
+      <div class="title">Social Media Dashboard</div>
+      <div class="text">Total Followers: 23,004</div>
+    </div>
     <hr>
     <div class="mode">
       <div class="text">Dark Mode</div>
@@ -23,28 +25,27 @@
         <img class="big-square-socialred" [src]="square.icon" alt="">
         <div class="big-square-name">{{square.name}}</div>
       </div>
-      <div class="big-square-amount">{{square.amount}}</div>
+      <div class="big-square-amount">{{square.amount | shortenNumber}}</div>
       <div class="big-square-type">{{square.type}}</div>
       <div class="big-square-variation" style="color:{{square.indicator}} ;"><img [src]="square.symbol" alt="">{{square.variation}} Today</div>
      </div>
     </div>
   </section>
 
+  <div class="subtitle">Overview - Today</div>
   <section class="small-squares-container">
-    <div class="subtitle">Overview - Today</div>
-
-    <div class="small-squares-container" *ngFor="let square of smallSquare">
-      <div class="small-square">
-        <div class="row-1">
-          <div class="small-square-details">{{square.details}}</div>
-          <img class="small-square-socialred" [src]="square.icon" alt="">
-        </div>
-        <div class="row-2">
-          <div class="small-square-amount">{{square.amount}}</div>
-          <div class="small-square-variation"><img [src]="square.symbol" alt="">{{square.variation}}%</div>
+      <div *ngFor="let square of smallSquare">
+        <div class="small-square">
+          <div class="row-1">
+            <div class="small-square-details">{{square.details}}</div>
+            <img class="small-square-socialred" [src]="square.icon" alt="">
+          </div>
+          <div class="row-2">
+            <div class="small-square-amount">{{square.amount | shortenNumber}}</div>
+            <div class="small-square-variation" style="color: {{square.indicator}};"><img [src]="square.symbol" alt="">{{square.variation}}%</div>
+          </div>
         </div>
       </div>
-    </div>
   </section>
 </body>
 </html>

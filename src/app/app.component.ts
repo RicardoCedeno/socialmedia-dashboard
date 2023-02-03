@@ -9,6 +9,7 @@ import { SmallSquare } from './classes/small-square';
 })
 export class AppComponent {
   title = 'socialmedia-dashboard';
+  math:Math;
 
   facebookIcon:string="assets/images/icon-facebook.svg";
   twitterIcon:string="assets/images/icon-twitter.svg";

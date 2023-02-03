@@ -41,6 +41,7 @@ body{
   margin-top: 10px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  max-width: 700px;
 
 
   .big-square-name-socialred{
@@ -86,16 +87,25 @@ padding: 20px 0px 20px 0px;
 
 //section-2
 
+
 .subtitle{
   color: var(--Dark-Grayish-Blue);
   font-size: 24px;
   font-weight: 800;
+  margin: 50px 0px 50px 0px;
+}
+
+.small-squares-container{
+  text-align: center;
 }
 
 .small-square{
   background: var(--Light-Grayish-Blue);
   margin-top: 10px;
   padding: 10px 15px 10px 15px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 
   .row-1{
     display: flex;
@@ -134,4 +144,72 @@ padding: 20px 0px 20px 0px;
   }
 
 }
+
+@media screen and (min-width: 1440px){
+
+body{
+  padding: 0px 8% 0px 8%;
+}
+
+  nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .presentation{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .title{
+      font-size: 40px;
+    }
+    .text{
+      font-size: 22px;
+    }
+
+    .mode{
+      gap: 10px;
+    }
+  }
+
+  .big-squares-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .big-square{
+    width: 280px;
+    margin: 0px 10px 0px 10px;
+
+    .big-square-variation{
+      padding: 10px 0px 10px 0px;
+    }
+  }
+
+  .small-square{
+    width: 280px;
+    margin: 15px 10px 15px 10px;
+
+  }
+
+  .small-squares-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+
+
+  }
+
+}
+
+//section 2 -- small squares
+
+
 
