@@ -22,9 +22,73 @@ export class AppComponent {
 
   darkModeActive(){
     this.dark=!this.dark
-    console.log(this.dark)
+    if(this.dark==true){
+      this.darkMode()
+    }
+    else{
+      this.lightMode()
+    }
   }
 
+
+
+  darkMode(){
+    var topBody=document.getElementById("help-square")
+    topBody?.classList.add("dark-top-body")
+
+    var Body=document.getElementById("body")
+    Body?.classList.add("dark-body")
+
+    var bigSquare=document.getElementsByClassName("big-square")
+    for(var i=0; i<bigSquare.length; i++){
+      bigSquare[i].classList.add("dark-big-square")
+    }
+
+    var titles=document.getElementsByClassName("text-1")
+    for(var i=0; i<titles.length; i++){
+      titles[i].classList.add("dark-text-1")
+    }
+
+    var subtitles=document.getElementsByClassName("text-2")
+    for(var i=0; i<subtitles.length; i++){
+      subtitles[i].classList.add("dark-text-2")
+    }
+    var smallSquare=document.getElementsByClassName("small-square")
+    for(var i=0; i<smallSquare.length; i++){
+      smallSquare[i].classList.add("dark-small-square")
+    }
+
+  }
+
+  lightMode(){
+    console.log("light mode")
+    var topBody=document.getElementById("help-square")
+    topBody?.classList.remove("dark-top-body")
+
+    var Body=document.getElementById("body")
+    Body?.classList.remove("dark-body")
+
+    var bigSquare=document.getElementsByClassName("big-square")
+    for(var i=0; i<bigSquare.length; i++){
+      bigSquare[i].classList.remove("dark-big-square")
+    }
+
+    var titles=document.getElementsByClassName("text-1")
+    for(var i=0; i<titles.length; i++){
+      titles[i].classList.remove("dark-text-1")
+    }
+
+    var subtitles=document.getElementsByClassName("text-2")
+    for(var i=0; i<subtitles.length; i++){
+      subtitles[i].classList.remove("dark-text-2")
+    }
+
+    var smallSquare=document.getElementsByClassName("small-square")
+    for(var i=0; i<smallSquare.length; i++){
+      smallSquare[i].classList.remove("dark-small-square")
+    }
+
+  }
 
 
 

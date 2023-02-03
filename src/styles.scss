@@ -18,9 +18,9 @@
 
   //dark theme
   --Dark-toggle-button:90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%);
-  --Very-Dark-Blue: hsl(230, 17%, 14%);
-  --Very-Dark-Blue-top: hsl(232, 19%, 15%);
-  --Dark-Desaturated-Blue: hsl(228, 28%, 20%);
+  --Very-Dark-Blue: hsl(230, 17%, 14%); //body
+  --Very-Dark-Blue-top: hsl(232, 19%, 15%); //top body
+  --Dark-Desaturated-Blue: hsl(228, 28%, 20%); //card-background
   --Desaturated-Blue: hsl(228, 34%, 66%); //text
   --White-dark-theme: hsl(0, 0%, 100%); //text
 
@@ -33,6 +33,8 @@
   --Light-Grayish-Blue: hsl(227, 47%, 96%); //card-background
   --Dark-Grayish-Blue: hsl(228, 12%, 44%); //text
   --Very-Dark-Blue: hsl(230, 17%, 14%); //text
+
+  --button-circle:rgb(38,42,70)
 
 }
 

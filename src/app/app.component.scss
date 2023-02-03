@@ -31,10 +31,9 @@ input:checked~ .button-switch-label{
   content: '';
   width: 22px;
   height: 22px;
-  background: blue;
+  background: var(--button-circle);
   border-radius: 100px;
   top: 4px;
-  transition: 0.5s;
 }
 
 input:checked~ .button-switch-label::after{
@@ -75,10 +74,16 @@ hr{
 }
 
 .text {
-
   color: var(--Dark-Grayish-Blue);
   font-weight: 700;
+}
 
+.title-light{
+  color: var(--Very-Dark-Blue);
+}
+
+.subtitle-light{
+  color:var(--Dark-Grayish-Blue);
 }
 
 .mode{
@@ -128,6 +133,7 @@ hr{
 }
 .big-square-type{
   font-size: 14px;
+  font-weight: 700;
   letter-spacing: 5px;
   padding: 5px 0px 20px 0px;
   color: var(--Dark-Grayish-Blue);
@@ -180,7 +186,6 @@ padding: 20px 0px 20px 0px;
 
 
     .small-square-details{
-      color: var(--Dark-Grayish-Blue);
       font-weight: 700;
       margin-top: 20px;
     }
@@ -195,7 +200,6 @@ padding: 20px 0px 20px 0px;
     align-items: center;
 
     .small-square-amount{
-      color: var(--Very-Dark-Blue);
       font-weight: 900;
       font-size: 30px;
     }
@@ -215,6 +219,9 @@ body{
   padding: 0px 8% 0px 8%;
 }
 
+hr{
+  display: none;
+}
   nav{
     display: flex;
     flex-direction: row;
@@ -300,3 +307,31 @@ body{
 
 
 
+// estilos para modo oscuro
+
+.dark-top-body{
+  background: var(--Very-Dark-Blue-top);
+}
+
+.dark-body{
+  background: var(--Very-Dark-Blue);
+}
+
+.dark-big-square{
+  background: var(--Dark-Desaturated-Blue);
+}
+
+.dark-text-2{
+  color:var(--Desaturated-Blue);
+}
+.dark-text-1{
+  color:var(--White-dark-theme);
+}
+
+.dark-small-square{
+  background: var(--Dark-Desaturated-Blue);
+}
+
+.red{
+  color: none;
+}
