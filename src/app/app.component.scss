@@ -1,11 +1,16 @@
 //nav
 nav{
   margin-top: 30px;
+  margin-bottom:50px;
 }
 body{
   padding: 0px 5% 0px 5%;
 }
 
+hr{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
 
 
 .title{
@@ -92,7 +97,8 @@ padding: 20px 0px 20px 0px;
   color: var(--Dark-Grayish-Blue);
   font-size: 24px;
   font-weight: 800;
-  margin: 50px 0px 50px 0px;
+  margin: 30px 0px 30px 0px;
+
 }
 
 .small-squares-container{
@@ -162,10 +168,10 @@ body{
     }
 
     .title{
-      font-size: 40px;
+      font-size: 30px;
     }
     .text{
-      font-size: 22px;
+      font-size: 18px;
     }
 
     .mode{
@@ -180,17 +186,42 @@ body{
   }
 
   .big-square{
-    width: 280px;
+    width: 270px;
     margin: 0px 10px 0px 10px;
+
+    .big-square-name-socialred{
+      padding: 15px 0px 15px 0px;
+    }
+
+    .big-square-amount{
+      font-size: 50px;
+    }
 
     .big-square-variation{
       padding: 10px 0px 10px 0px;
     }
   }
 
+  .subtitle{
+    margin: 40px 0px 10px 0px;
+  }
+
+
+
   .small-square{
-    width: 280px;
-    margin: 15px 10px 15px 10px;
+    border-radius: 10px;
+    width: 270px;
+    margin: 15px 15px 15px 15px;
+
+    .row-2{
+      padding: 10px 0px 10px 0px;
+
+      .small-square-amount{
+        font-size: 36px;
+      }
+    }
+
+
 
   }
 
@@ -208,8 +239,6 @@ body{
   }
 
 }
-
-//section 2 -- small squares
 
 
 
