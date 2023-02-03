@@ -11,7 +11,7 @@
   <nav>
     <div class="presentation">
       <div class="title text-1">Social Media Dashboard</div>
-      <div class="text text-2">Total Followers: 23,004</div>
+      <div class="text text-2">Total Followers: {{totalFollowers | numberFormat}}</div>
     </div>
     <hr>
     <div class="mode">
@@ -26,7 +26,7 @@
   <section class="big-squares-container">
     <div class="help-square" id="help-square"></div>
     <div *ngFor="let square of bigSquare">
-     <div class="big-square" id="big-square" style="border-image: linear-gradient(90deg, {{square.color}}); border-width:6px 0px 0px 0px; border-style:solid; border-image-slice:1">
+     <div class="big-square light-big-square" id="big-square" style="border-image: linear-gradient(90deg, {{square.color}}); border-width:6px 0px 0px 0px; border-style:solid; border-image-slice:1">
       <div class="big-square-name-socialred">
         <img class="big-square-socialred" [src]="square.icon" alt="">
         <div class="big-square-name text-2">{{square.name}}</div>
@@ -41,7 +41,7 @@
   <div class="subtitle text-1">Overview - Today</div>
   <section class="small-squares-container">
       <div *ngFor="let square of smallSquare">
-        <div class="small-square">
+        <div class="small-square light-small-square">
           <div class="row-1">
             <div class="small-square-details subtitle-light text-2">{{square.details}}</div>
             <img class="small-square-socialred" [src]="square.icon" alt="">

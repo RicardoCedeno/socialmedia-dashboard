@@ -9,7 +9,7 @@ import { SmallSquare } from './classes/small-square';
 })
 export class AppComponent {
   title = 'socialmedia-dashboard';
-  math:Math;
+  totalFollowers=23004
 
   facebookIcon:string="assets/images/icon-facebook.svg";
   twitterIcon:string="assets/images/icon-twitter.svg";
@@ -41,6 +41,7 @@ export class AppComponent {
 
     var bigSquare=document.getElementsByClassName("big-square")
     for(var i=0; i<bigSquare.length; i++){
+      bigSquare[i].classList.remove("light-big-square")
       bigSquare[i].classList.add("dark-big-square")
     }
 
@@ -56,12 +57,12 @@ export class AppComponent {
     var smallSquare=document.getElementsByClassName("small-square")
     for(var i=0; i<smallSquare.length; i++){
       smallSquare[i].classList.add("dark-small-square")
+      smallSquare[i].classList.remove("light-small-square")
     }
 
   }
 
   lightMode(){
-    console.log("light mode")
     var topBody=document.getElementById("help-square")
     topBody?.classList.remove("dark-top-body")
 
@@ -71,6 +72,13 @@ export class AppComponent {
     var bigSquare=document.getElementsByClassName("big-square")
     for(var i=0; i<bigSquare.length; i++){
       bigSquare[i].classList.remove("dark-big-square")
+      bigSquare[i].classList.add("light-big-square")
+    }
+
+    //efecto hover
+    var bigSquare=document.getElementsByClassName("big-square")
+    for(var i=0; i<bigSquare.length; i++){
+      bigSquare[i].classList.add("light-big-square:hover")
     }
 
     var titles=document.getElementsByClassName("text-1")
@@ -86,7 +94,10 @@ export class AppComponent {
     var smallSquare=document.getElementsByClassName("small-square")
     for(var i=0; i<smallSquare.length; i++){
       smallSquare[i].classList.remove("dark-small-square")
+      smallSquare[i].classList.add("light-small-square")
     }
+
+    //efecto hover
 
   }
 
