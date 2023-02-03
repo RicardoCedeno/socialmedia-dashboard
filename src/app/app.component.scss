@@ -1,4 +1,5 @@
-//nav
+//Estilos para la vista de dispositivos móviles, es decir, width<375px
+
 nav{
   margin-top: 50px;
   margin-bottom:50px;
@@ -14,8 +15,7 @@ body{
   background: var(--White-light-theme);
   padding-bottom: 50px;
 }
-//button switch
-
+//button switch utilizado para intercalar entre tema normal y tema oscuro
 .button-switch-label{
   display: inline-block;
   width: 55px;
@@ -48,8 +48,7 @@ input{
   display: none;
 }
 
-//square shadow top body
-
+//square shadow top body -- Utilizado para dar efecto de sombra en la parte superior de la página
 
 .help-square{
 
@@ -223,6 +222,7 @@ padding: 20px 0px 20px 0px;
 
 }
 
+//Estilos para vista de computador, es decir width>1440px
 @media screen and (min-width: 1440px){
 
 body{
@@ -319,7 +319,7 @@ hr{
 
 
 
-// estilos para modo oscuro
+// estilos para modo oscuro, los cuales serán utilizados por métodos para ser aplicados a las diferentes etiquetas de html por medio de typescript
 
 .dark-top-body{
   background: var(--Very-Dark-Blue-top);
@@ -352,7 +352,7 @@ hr{
   background: var(--Light-Grayish-Blue);
 }
 
-//effects
+//effects -- Efectos hover que son aplicados a las diferentes figuras de la página
 
 .dark-big-square:hover{
   box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.15);

@@ -1,4 +1,4 @@
-//primary
+//Eliminación de margin y padding por defecto
 *{
   box-sizing: border-box;
   padding: 0;
@@ -6,7 +6,7 @@
   font-family: 'Inter', sans-serif;
 }
 
-
+//variables de estilo de todo el proyecto
 :root{
   --Lime-Green:hsl(163, 72%, 41%);
   --Bright-Red: hsl(356, 69%, 56%);

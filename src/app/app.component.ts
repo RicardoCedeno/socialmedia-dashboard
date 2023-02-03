@@ -9,8 +9,15 @@ import { SmallSquare } from './classes/small-square';
 })
 export class AppComponent {
   title = 'socialmedia-dashboard';
+
+  /**
+   * La variable totalFollowers es usada por medio de string interpolation, además se usa un pipe construído llamado numberFormat para transformar el numero al formato deseado
+   */
   totalFollowers=23004
 
+  /**
+   * Las variables que se ven a continuación hacen referencia a las ubicaciones de los iconos de las diferentes redes sociales para evitar errores causados por escribirlas repetidamente
+   */
   facebookIcon:string="assets/images/icon-facebook.svg";
   twitterIcon:string="assets/images/icon-twitter.svg";
   instagramIcon:string="assets/images/icon-instagram.svg";
@@ -18,8 +25,14 @@ export class AppComponent {
   iconUp:string="assets/images/icon-up.svg"
   iconDown:string="assets/images/icon-down.svg"
 
+  /**
+   * La variable dark es la que indica si el modo oscuro debe ser activado o no. Dependiendo de su valor se avtiva el método lightMode o darkMode
+   */
   dark:boolean=false;
 
+  /**
+   * Es el método que se encarga de presentar uno de los dos temas(oscuro o normal) dependiendo del valor de la variable dark, la cual cambia cada vez que este método es activado.
+   */
   darkModeActive(){
     this.dark=!this.dark
     if(this.dark==true){
@@ -32,6 +45,9 @@ export class AppComponent {
 
 
 
+  /**
+   * Este método se encarga de dar estilo oscuro a cada uno de los elementos necesarios. Se activa cuando la variable dark es verdadera
+   */
   darkMode(){
     var topBody=document.getElementById("help-square")
     topBody?.classList.add("dark-top-body")
@@ -62,6 +78,9 @@ export class AppComponent {
 
   }
 
+  /**
+   * Este método se encarga de dar estilos de tema normal a cada uno de los elementos necesarios. Se activa cuando la variable dark es falsa
+   */
   lightMode(){
     var topBody=document.getElementById("help-square")
     topBody?.classList.remove("dark-top-body")
@@ -102,7 +121,9 @@ export class AppComponent {
   }
 
 
-
+  /**
+   * Para evitar repetición excesiva en html, los datos de los cuadros son plasmados en una lista que contiene objetos de tipo big-square, los cuales serán mostrados usando un ngfor y string interpolation
+   */
   bigSquare:BigSquare[]=[
     {
       icon:this.facebookIcon,
@@ -147,6 +168,9 @@ export class AppComponent {
     }
   ]
 
+  /**
+   * Para evitar repetición excesiva en html, los datos de los cuadros son plasmados en una lista que contiene objetos de tipo small-square
+   */
   smallSquare:SmallSquare[]=[
     {
       details:"Page Views",

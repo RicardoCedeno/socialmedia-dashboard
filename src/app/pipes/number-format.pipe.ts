@@ -1,3 +1,6 @@
+/**
+ * Pipe utilizada para convertir números en formato de miles (23004 --> 23,004)
+ */
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({

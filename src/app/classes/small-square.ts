@@ -1,3 +1,6 @@
+/**
+ * Cuadro para identificar los cuadros pequeños de la página
+ */
 export class SmallSquare {
   details:string;
   icon:string;

@@ -1,3 +1,6 @@
+/**
+ * Pipe usada para convertir números mayores de 10000 en formado nK (52000 --> 52K)
+ */
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({

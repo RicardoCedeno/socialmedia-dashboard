@@ -1,3 +1,6 @@
+/**
+ * Clase para identificar los cuadros de tamaño grande de la página
+ */
 export class BigSquare {
   icon:string;
   name:string;
