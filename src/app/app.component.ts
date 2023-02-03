@@ -18,6 +18,16 @@ export class AppComponent {
   iconUp:string="assets/images/icon-up.svg"
   iconDown:string="assets/images/icon-down.svg"
 
+  dark:boolean=false;
+
+  darkModeActive(){
+    this.dark=!this.dark
+    console.log(this.dark)
+  }
+
+
+
+
   bigSquare:BigSquare[]=[
     {
       icon:this.facebookIcon,

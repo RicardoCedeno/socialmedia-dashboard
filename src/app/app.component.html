@@ -7,6 +7,7 @@
   <title>Document</title>
 </head>
 <body>
+
   <nav>
     <div class="presentation">
       <div class="title">Social Media Dashboard</div>
@@ -15,7 +16,11 @@
     <hr>
     <div class="mode">
       <div class="text">Dark Mode</div>
-      <button>mode</button>
+      <div class="button-switch-container">
+        <input type="checkbox" id="button-switch">
+        <label (click)="darkModeActive()" for="button-switch" class="button-switch-label"></label>
+      </div>
+
     </div>
   </nav>
   <section class="big-squares-container">
