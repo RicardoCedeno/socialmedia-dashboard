@@ -1,3 +1,6 @@
+#Antes de empezar
+El proyecto final se encuentra alojado en firebase: https://r-social-dashboard-f0efd.web.app
+
 # SocialmediaDashboard
 Proyecto construido en angular acerca de estadísticas de redes sociales
 
@@ -27,3 +30,8 @@ Para poder intercalar entre ambos temas se declaró una variable booleana llamad
 ## Estilos dinámicos
 Para poder crear estilos que varíen dependiendo del valor de la variable dark, se usaron métodos y funciones capturando el id y class de cada elemento html.
 
+
+
+
+## Portafolios
+https://rcedeno-portfolio.web.app/
